@@ -2,26 +2,12 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ nimi }}</title>
-    <style>
-        body { font-family: sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; }
-        h1 { font-size: 1.8rem; }
-        .tervehdys {
-            font-size: 1.2rem;
-            color: #333;
-            background: #f0f6ff;
-            border-left: 4px solid #0969da;
-            padding: 16px 20px;
-            border-radius: 0 6px 6px 0;
-            margin: 24px 0;
-        }
-        a { color: #0969da; }
-    </style>
 </head>
 <body>
     <h1>{{ nimi }}</h1>
-    <div class="tervehdys">{{ tervehdys }}</div>
-    <p><a href="/">← Takaisin etusivulle</a></p>
+    <p>{{ tervehdys }}</p>
+
+    <p><a href="/">Takaisin etusivulle</a></p>
 </body>
 </html>

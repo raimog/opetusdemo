@@ -2,43 +2,34 @@
 
 Yksinkertainen webserveri jossa jokainen opiskelija lisää oman sivunsa.
 
-## Käynnistys Dockerilla
 
-```bash
-docker build -t opetusdemo .
-docker run -p 5000:5000 opetusdemo
-```
+🧠 Tehtäväsi
 
-Avaa selaimessa: http://localhost:5000
+Lisää oma sivusi luomalla uusi tiedosto students-kansioon.
 
-## Tehtäväsi
+❗ Älä muokkaa app.py:tä
+❗ Älä muokkaa muiden tiedostoja
 
-Lisää oma sivusi tekemällä muutokset `app.py`-tiedostoon:
+📄 1. Luo uusi tiedosto
 
-### 1. Lisää itsesi OPISKELIJAT-listaan
+Luo uusi tiedosto kansioon:
 
-```python
-OPISKELIJAT = [
-    {"nimi": "Esimerkki (opettaja)", "reitti": "/esimerkki", "tervehdys": "Hei!"},
-    {"nimi": "Matti M", "reitti": "/matti", "tervehdys": "Moikka maailma!"},  # ← lisää tämä
-]
-```
+students/
 
-### 2. Lisää oma reitti
+Tiedoston nimi:
 
-```python
-@app.route("/matti")
-def matti():
-    return render_template("opiskelija.html", nimi="Matti M", tervehdys="Moikka maailma!")
-```
+etunimi.json
 
-### 3. Tee commit ja pull request
+Esimerkiksi:
 
-```bash
-git checkout -b oma-nimi/lisaa-oma-sivu
-git add app.py
-git commit -m "Lisää Matti M:n sivu"
-git push origin oma-nimi/lisaa-oma-sivu
-```
+students/matti.json
 
-Avaa sen jälkeen Pull Request GitHubissa.
+✏️ 2. Lisää oma sisältö
+
+Lisää tiedostoon seuraava sisältö ja muokkaa sitä omilla tiedoillasi:
+
+{
+  "nimi": "Matti M",
+  "reitti": "/matti",
+  "tervehdys": "Moikka maailma!"
+}
