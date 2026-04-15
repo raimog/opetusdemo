@@ -10,7 +10,6 @@ app = Flask(__name__)
 # ------------------------------------------------------------
 OPISKELIJAT = [
     {"nimi": "Esimerkki (opettaja)", "reitti": "/esimerkki", "tervehdys": "Hei! Tämä on esimerkkisivu."},
-    {"nimi": "SamiP", "reitti": "/samip", "tervehdys": "Hei.Heheeiik"},
 ]
 
 
